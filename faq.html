@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS link -->
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <!-- TailWind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Important FAQ</title>
+  </head>
+  <body>
+    <section class="sticky">
+      <div class="bg-orange-100 navbar bg-base-100">
+        <div class="navbar-start">
+          <div>
+            <button id="home" type="submit" class="ml-10 btn bg-lime-300">
+              Home
+            </button>
+          </div>
+        </div>
+        <div class="navbar-center">
+          <a class="btn btn-ghost text-xl">
+            <img src="assets/logo.png" alt="" /> Donate Bangladesh</a
+          >
+        </div>
+        <div class="navbar-end mr-10">
+          <div class="flex gap-1">
+            <img src="assets/coin.png" alt="" />
+            <p id="main-balance">5000</p>
+            <p>BDT</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ques section  -->
+<br>
+    <h1 class="text-8xl mx-10 font-bold">
+      Important FAQ
+    </h1><br>
+
+    <section class="mx-10">
+      <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+        <div class="collapse-title text-xl font-medium">What is the document object model (DOM)?</div>
+        <div class="collapse-content">
+          <p>When a web page is loaded, the browser creates a Document Object Model of the page.</p>
+        </div>
+      </div>
+      <br>
+      <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+        <div class="collapse-title text-xl font-medium">How do you select an element from DOM?</div>
+        <div class="collapse-content">
+          <p>By using quarry selector.</p>
+        </div>
+      </div>
+      <br>
+      <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+        <div class="collapse-title text-xl font-medium">What is event deligation in the context of the DOM, and why is it useful?</div>
+        <div class="collapse-content">
+          <p>n event-handling pattern that allows you to handle events at a higher level in the DOM tree other than the level where the event was first received.</p>
+        </div>
+      </div>
+      <br>
+      <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+        <div class="collapse-title text-xl font-medium">How do you manupulate an elemente an element's attributes and styles using the DOM?</div>
+        <div class="collapse-content">
+          <p>The onfocus event handler method is used to change the <input> element's style when the user clicks inside it.</p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document
+        .getElementById("home")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          window.location.href = "index.html";
+        });
+    </script>
+  </body>
+</html>
